@@ -42,8 +42,8 @@ dependencies {
     androidTestImplementation AndroidTestImplementation.espresso
 
     implementation Retrofit.retrofit
-    implementation Retrofit.gsonConvertor
     implementation Retrofit.okHttp
+    implementation Retrofit.gsonConvertor
 
     implementation DaggerHilt.hilt
     kapt DaggerHilt.hiltCompiler

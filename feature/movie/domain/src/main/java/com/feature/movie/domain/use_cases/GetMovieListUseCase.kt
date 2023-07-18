@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.flowOn
 import javax.inject.Inject
 
 
-class GetMovieListUseCase @Inject constructor(var movieRepository: MovieRepository) {
+class GetMovieListUseCase @Inject constructor(private val movieRepository: MovieRepository) {
 
     operator fun invoke(apiKey: String, q: String) = flow<UiEvent<List<Movie>>> {
         emit(UiEvent.Loading())

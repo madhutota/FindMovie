@@ -35,11 +35,10 @@ object Version {
 
     // compose
     const val composeUiVersion = "1.3.3"
-    const val composeActivity = "1.7.2"
-    const val composeMaterial = "1.3.1"
+    const val composeActivity = "1.6.1"
+    const val composeMaterial = "1.1.1"
 
     const val composeNavigation = "2.6.0-alpha05"
-    const val composeBom = "2023.06.01"
 
     const val coilImageLoading = "2.2.2"
 
@@ -132,16 +131,12 @@ object DaggerHilt {
 
 object DaggerHiltTestingTestImpl {
     // For Robolectric tests.
-    const val daggerHiltTestImplRobolectric =
-        "com.google.dagger:hilt-android-testing:${Version.daggerHiltTestImpl}"
-    const val daggerHiltKaptTestRobolectric =
-        "com.google.dagger:hilt-android-compiler:${Version.daggerHiltTestImpl}"
+    const val daggerHiltTestImplRobolectric = "com.google.dagger:hilt-android-testing:${Version.daggerHiltTestImpl}"
+    const val daggerHiltKaptTestRobolectric = "com.google.dagger:hilt-android-compiler:${Version.daggerHiltTestImpl}"
 
     // For instrumented tests.
-    const val daggerHiltAndroidTestImpl =
-        "com.google.dagger:hilt-android-testing:${Version.daggerHiltAndroidTestImpl}"
-    const val daggerHiltAndroidTestKapt =
-        "com.google.dagger:hilt-android-compiler:${Version.daggerHiltAndroidTestImpl}"
+    const val daggerHiltAndroidTestImpl = "com.google.dagger:hilt-android-testing:${Version.daggerHiltAndroidTestImpl}"
+    const val daggerHiltAndroidTestKapt = "com.google.dagger:hilt-android-compiler:${Version.daggerHiltAndroidTestImpl}"
 }
 
 object Room {
@@ -150,8 +145,7 @@ object Room {
 }
 
 object CircularProgressBar {
-    const val swipeRefresh =
-        "androidx.swiperefreshlayout:swiperefreshlayout:${Version.swipeRefresh}"
+    const val swipeRefresh = "androidx.swiperefreshlayout:swiperefreshlayout:${Version.swipeRefresh}"
 }
 
 object LottieAnimations {
@@ -162,16 +156,14 @@ object LottieAnimations {
 
 object JetpackCompose {
     const val composeActivity = "androidx.activity:activity-compose:${Version.composeActivity}"
-    const val composeUi = "androidx.compose.ui:ui"
-    const val composeGraphics = "androidx.compose.ui:ui-graphics"
+    const val composeUi = "androidx.compose.ui:ui:${Version.composeUiVersion}"
     const val composeUiToolingPreview =
-        "androidx.compose.ui:ui-tooling-preview"
-    const val composeMaterial = "androidx.compose.material3:material3"
+        "androidx.compose.ui:ui-tooling-preview:${Version.composeUiVersion}"
+    const val composeMaterial = "androidx.compose.material3:material3:${Version.composeMaterial}"
+
+    //androidx.compose.material3:material3:1.1.0-alpha01
+
     const val navigation = "androidx.navigation:navigation-compose:${Version.composeNavigation}"
-
-    const val composeBom= "androidx.compose:compose-bom:${Version.composeBom}"
-
-
 }
 
 object ComposeAndroidTestImplementation {
@@ -190,3 +182,5 @@ object Plugins {
     const val DAGGER_HILT = "com.google.dagger.hilt.android"
     const val KOTLIN_KAPT = "kapt"
 }
+
+

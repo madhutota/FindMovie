@@ -11,7 +11,7 @@ interface MovieApi : FeatureApi {
 class MovieApiImpl : MovieApi {
     override fun registerGraph(navController: NavController, navGraphBuilder: NavGraphBuilder) {
 
-        InternalMovieFeatureApi.registerGraph(navController, navGraphBuilder)
+        //InternalMovieFeatureApi.registerGraph(navController, navGraphBuilder)
 
     }
 
